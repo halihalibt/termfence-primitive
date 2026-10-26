@@ -1,0 +1,13 @@
+{
+  "description": "Synthetic operational rule fixture; not an actual library policy",
+  "slug": "library-v1",
+  "source_units": [
+    "Members may borrow up to three books for fourteen days.",
+    "Reference books cannot be borrowed under any circumstances."
+  ],
+  "negative_candidate": "Members may borrow three books for fourteen days.",
+  "positive_candidate": "Members may borrow 3 books for 14 days, excluding reference books.",
+  "expected_negative": {"units":["KEPT","LOST"],"addition":"NONE","status":"REJECTED"},
+  "expected_positive": {"units":["KEPT","KEPT"],"addition":"NONE","status":"PRESERVED"},
+  "note": "Expected values are test expectations, never evidence of actual network results."
+}
