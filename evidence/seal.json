@@ -1,0 +1,37 @@
+{
+  "step": "seal",
+  "record_id": "0xd5c2a2033f2b9764034b22265737af9417f2d804:library-v1",
+  "address": "0xe304B9019Ba237E3daA1370077546AE6b02b4E58",
+  "sender": "0xD5C2a2033f2B9764034B22265737af9417f2d804",
+  "functionName": "seal",
+  "args": [
+    "library-v1",
+    "[\"Members may borrow up to three books for fourteen days.\",\"Reference books cannot be borrowed under any circumstances.\"]"
+  ],
+  "state": "checked",
+  "time": "2026-10-26T07:55:45.542Z",
+  "hash": "0x68a379f0b104d001c1dda7e1e06bf3ae5df5d08c7983813186ba84e5e4fcf98e",
+  "status": "FINALIZED",
+  "consensus": "MAJORITY_AGREE",
+  "execution": "return",
+  "votes": {
+    "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+    "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+    "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+    "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+    "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+  },
+  "final_readback": {
+    "attempts": [],
+    "id": "0xd5c2a2033f2b9764034b22265737af9417f2d804:library-v1",
+    "owner": "0xd5c2a2033f2b9764034b22265737af9417f2d804",
+    "published": -1,
+    "revision": 0,
+    "source_hash": "bc61697470a78e334fab4dbbb2e5d5f6cc5c4f10fba7c2350cdc419e061caedd",
+    "source_units": [
+      "Members may borrow up to three books for fourteen days.",
+      "Reference books cannot be borrowed under any circumstances."
+    ],
+    "state": "SEALED"
+  }
+}

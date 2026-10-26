@@ -1,0 +1,6 @@
+deployment: FINALIZED / MAJORITY_AGREE / return
+seal: FINALIZED / MAJORITY_AGREE / return
+negative: FINALIZED / MAJORITY_AGREE / return
+positive: FINALIZED / MAJORITY_AGREE / return
+publish: FINALIZED / MAJORITY_AGREE / return
+Verified source, final receipts, controls, published selection and input hashes.

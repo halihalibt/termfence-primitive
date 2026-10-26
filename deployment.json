@@ -1,0 +1,18 @@
+{
+  "protocol": "termfence-1",
+  "network": "Stable Studionet",
+  "chain_id": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "address": "0xe304B9019Ba237E3daA1370077546AE6b02b4E58",
+  "sender": "0xD5C2a2033f2B9764034B22265737af9417f2d804",
+  "source_sha256": "83a9eb71254c7976fbb473c5c03bc01b5e9c62edd8b97d92cd65ed60e09a1df8",
+  "source_commit": "a50e43df218533cfc615193d3497a9a549772fd8",
+  "record_id": "0xd5c2a2033f2b9764034b22265737af9417f2d804:library-v1",
+  "transactions": {
+    "deployment": "0xf157dbd7e4773ab134df81d14769dcefc64b971a2e4817c1f1a5249f0328869f",
+    "seal": "0x68a379f0b104d001c1dda7e1e06bf3ae5df5d08c7983813186ba84e5e4fcf98e",
+    "negative": "0x20662a59e48b6689805de57d540ea0633ba42571fbc7960c95bbe6dee70d2432",
+    "positive": "0xadd98d0135323e32734c6a21ebf391e8b89d91d4a8e75f796e0a5cff5d3e576f",
+    "publish": "0x59d65f18782c53709309f8b2bf9ac054e7ced2ecec41299c14c1699688f6134d"
+  }
+}

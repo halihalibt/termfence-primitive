@@ -1,0 +1,63 @@
+{
+  "step": "publish",
+  "record_id": "0xd5c2a2033f2b9764034b22265737af9417f2d804:library-v1",
+  "address": "0xe304B9019Ba237E3daA1370077546AE6b02b4E58",
+  "sender": "0xD5C2a2033f2B9764034B22265737af9417f2d804",
+  "functionName": "publish",
+  "args": [
+    "0xd5c2a2033f2b9764034b22265737af9417f2d804:library-v1",
+    2,
+    1
+  ],
+  "state": "checked",
+  "time": "2026-10-26T08:00:56.243Z",
+  "hash": "0x59d65f18782c53709309f8b2bf9ac054e7ced2ecec41299c14c1699688f6134d",
+  "status": "FINALIZED",
+  "consensus": "MAJORITY_AGREE",
+  "execution": "return",
+  "votes": {
+    "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+    "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+    "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+    "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+    "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+  },
+  "final_readback": {
+    "attempts": [
+      {
+        "candidate": "Members may borrow three books for fourteen days.",
+        "candidate_hash": "ce918de5ec0402fc5973228a78c1cd5dc32b7a27facd9849140767bd7475ef7f",
+        "signals": {
+          "addition": "NONE",
+          "units": [
+            "LOST",
+            "LOST"
+          ]
+        },
+        "status": "REJECTED"
+      },
+      {
+        "candidate": "Members may borrow up to 3 books for 14 days, excluding reference books.",
+        "candidate_hash": "968d66a951c3174a02709434dc8d5234a6dbd63c9b9a7cbe75d4ae61193dd033",
+        "signals": {
+          "addition": "NONE",
+          "units": [
+            "KEPT",
+            "KEPT"
+          ]
+        },
+        "status": "PRESERVED"
+      }
+    ],
+    "id": "0xd5c2a2033f2b9764034b22265737af9417f2d804:library-v1",
+    "owner": "0xd5c2a2033f2b9764034b22265737af9417f2d804",
+    "published": 1,
+    "revision": 3,
+    "source_hash": "bc61697470a78e334fab4dbbb2e5d5f6cc5c4f10fba7c2350cdc419e061caedd",
+    "source_units": [
+      "Members may borrow up to three books for fourteen days.",
+      "Reference books cannot be borrowed under any circumstances."
+    ],
+    "state": "PUBLISHED"
+  }
+}

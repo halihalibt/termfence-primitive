@@ -1,0 +1,38 @@
+{
+  "attempts": [
+    {
+      "candidate": "Members may borrow three books for fourteen days.",
+      "candidate_hash": "ce918de5ec0402fc5973228a78c1cd5dc32b7a27facd9849140767bd7475ef7f",
+      "signals": {
+        "addition": "NONE",
+        "units": [
+          "LOST",
+          "LOST"
+        ]
+      },
+      "status": "REJECTED"
+    },
+    {
+      "candidate": "Members may borrow up to 3 books for 14 days, excluding reference books.",
+      "candidate_hash": "968d66a951c3174a02709434dc8d5234a6dbd63c9b9a7cbe75d4ae61193dd033",
+      "signals": {
+        "addition": "NONE",
+        "units": [
+          "KEPT",
+          "KEPT"
+        ]
+      },
+      "status": "PRESERVED"
+    }
+  ],
+  "id": "0xd5c2a2033f2b9764034b22265737af9417f2d804:library-v1",
+  "owner": "0xd5c2a2033f2b9764034b22265737af9417f2d804",
+  "published": 1,
+  "revision": 3,
+  "source_hash": "bc61697470a78e334fab4dbbb2e5d5f6cc5c4f10fba7c2350cdc419e061caedd",
+  "source_units": [
+    "Members may borrow up to three books for fourteen days.",
+    "Reference books cannot be borrowed under any circumstances."
+  ],
+  "state": "PUBLISHED"
+}

@@ -1,0 +1,51 @@
+{
+  "step": "negative",
+  "record_id": "0xd5c2a2033f2b9764034b22265737af9417f2d804:library-v1",
+  "address": "0xe304B9019Ba237E3daA1370077546AE6b02b4E58",
+  "sender": "0xD5C2a2033f2B9764034B22265737af9417f2d804",
+  "functionName": "assess",
+  "args": [
+    "0xd5c2a2033f2b9764034b22265737af9417f2d804:library-v1",
+    0,
+    "Members may borrow three books for fourteen days."
+  ],
+  "state": "checked",
+  "time": "2026-10-26T07:56:57.568Z",
+  "hash": "0x20662a59e48b6689805de57d540ea0633ba42571fbc7960c95bbe6dee70d2432",
+  "status": "FINALIZED",
+  "consensus": "MAJORITY_AGREE",
+  "execution": "return",
+  "votes": {
+    "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+    "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+    "0x336458747913FE397be82c4F0926ACeB3ab13618": "idle",
+    "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+    "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+  },
+  "final_readback": {
+    "attempts": [
+      {
+        "candidate": "Members may borrow three books for fourteen days.",
+        "candidate_hash": "ce918de5ec0402fc5973228a78c1cd5dc32b7a27facd9849140767bd7475ef7f",
+        "signals": {
+          "addition": "NONE",
+          "units": [
+            "LOST",
+            "LOST"
+          ]
+        },
+        "status": "REJECTED"
+      }
+    ],
+    "id": "0xd5c2a2033f2b9764034b22265737af9417f2d804:library-v1",
+    "owner": "0xd5c2a2033f2b9764034b22265737af9417f2d804",
+    "published": -1,
+    "revision": 1,
+    "source_hash": "bc61697470a78e334fab4dbbb2e5d5f6cc5c4f10fba7c2350cdc419e061caedd",
+    "source_units": [
+      "Members may borrow up to three books for fourteen days.",
+      "Reference books cannot be borrowed under any circumstances."
+    ],
+    "state": "ASSESSED"
+  }
+}

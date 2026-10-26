@@ -1,0 +1,19 @@
+{
+  "state": "checked",
+  "sender": "0xD5C2a2033f2B9764034B22265737af9417f2d804",
+  "chainId": 61999,
+  "source_sha256": "83a9eb71254c7976fbb473c5c03bc01b5e9c62edd8b97d92cd65ed60e09a1df8",
+  "time": "2026-10-26T07:51:07.540Z",
+  "preflight_transport_failure": {
+    "method": "eth_sendTransaction",
+    "error": "Method not found",
+    "transaction_created": false
+  },
+  "hash": "0xf157dbd7e4773ab134df81d14769dcefc64b971a2e4817c1f1a5249f0328869f",
+  "submitted_at": "2026-10-26T07:52:27.838Z",
+  "address": "0xe304B9019Ba237E3daA1370077546AE6b02b4E58",
+  "status": "FINALIZED",
+  "consensus": "MAJORITY_AGREE",
+  "execution": "return",
+  "source_commit": "a50e43df218533cfc615193d3497a9a549772fd8"
+}

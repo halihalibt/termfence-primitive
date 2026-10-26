@@ -35,7 +35,7 @@ spec = importlib.util.spec_from_file_location('term_fence', Path(__file__).paren
 m = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(m)
 UNITS = ['Members may borrow up to three books for fourteen days.', 'Reference books cannot be borrowed under any circumstances.']
-GOOD = 'Members may borrow 3 books for 14 days, excluding reference books.'
+GOOD = 'Members may borrow up to 3 books for 14 days, excluding reference books.'
 BAD = 'Members may borrow three books for fourteen days.'
 OK = {'units':['KEPT','KEPT'],'addition':'NONE'}
 NO = {'units':['KEPT','LOST'],'addition':'NONE'}

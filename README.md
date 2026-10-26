@@ -4,6 +4,8 @@ A standalone GenLayer Intelligent Contract for **material-fact preservation in c
 
 Useful for agent handoff summaries, compact operational instructions and brief public notices. It creates a shared, immutable acceptance record that downstream developers can read without trusting a summarization server. It does not generate the summary or authenticate the source.
 
+**Deployed:** [Stable Studionet contract](https://explorer-studio.genlayer.com/address/0xe304B9019Ba237E3daA1370077546AE6b02b4E58). Five finalized successful transactions cover source sealing, omission rejection, a preserved paraphrase and terminal publication. [Inspect evidence](EVIDENCE.md).
+
 ## Mechanism
 
 1. `seal(slug, source_units_json)` fixes 2–8 mandatory source units in the caller's namespace.
@@ -29,3 +31,21 @@ python -m unittest discover -s tests -v
 The tests replace the model and GenLayer boundary with scripted responses. They verify state and rejection behavior, **not real model accuracy or network consensus**. Live receipts, when available, are recorded separately in `evidence/`.
 
 Stable Studionet only: chain `61999`, RPC `https://studio.genlayer.com/api`. The contract's dependency is pinned in its first line. No frontend, backend, API key, token sale, fund custody or application companion is required. MIT licensed.
+
+## Developer call example
+
+With `genlayer-js@1.1.8` and an EIP-1193 wallet already on chain 61999, create a client with `chain: studionet`, the selected account address and `provider: wallet`. Call `writeContract` with `value: 0n` and `leaderOnly: false`. Each call requires final receipt confirmation before the next revision is used:
+
+```js
+// Seal once; source_units_json is a string containing a JSON array.
+await client.writeContract({address, functionName: 'seal',
+  args: ['my-notice', JSON.stringify(sourceUnits)], value: 0n, leaderOnly: false});
+// After successful finalization and get_record, use the returned current revision.
+await client.writeContract({address, functionName: 'assess',
+  args: [recordId, revision, shorterCandidate], value: 0n, leaderOnly: false});
+// After a PRESERVED result, publish that exact attempt index at the current revision.
+await client.writeContract({address, functionName: 'publish',
+  args: [recordId, revision, attemptIndex], value: 0n, leaderOnly: false});
+```
+
+These are separate transactions, not a batch to run blindly. Persist each returned hash. On timeout, inspect that same hash and finalized state; never resubmit automatically. The shared deployment can accept independently owned records; its synthetic demonstration record is immutable after publication.
